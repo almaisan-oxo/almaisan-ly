@@ -1,0 +1,181 @@
+import { NavItem, Service, Project, Stat } from './types';
+
+export const NAV_ITEMS: NavItem[] = [
+  { id: 'hero', labelEn: 'Home', labelAr: 'الرئيسية' },
+  { id: 'services', labelEn: 'Services', labelAr: 'خدماتنا' },
+  { id: 'portfolio', labelEn: 'Work', labelAr: 'أعمالنا' },
+  { id: 'why-us', labelEn: 'About', labelAr: 'عن الشركة' },
+  { id: 'contact', labelEn: 'Contact', labelAr: 'تواصل معنا' },
+];
+
+export const SOCIAL_LINKS = {
+  whatsapp: 'https://wa.me/218916003838',
+  facebook: 'https://www.facebook.com/share/17vkUq4Mm1/',
+  instagram: 'https://www.instagram.com/a_lmaisan?igsh=NWo3dzNxOWwxaTA5',
+  tiktok: 'https://www.tiktok.com/@almaisanly?is_from_webapp=1&sender_device=pc',
+};
+
+export const SERVICES: Service[] = [
+  {
+    id: 1,
+    icon: 'briefcase',
+    titleEn: 'Brand Strategy',
+    titleAr: 'إستراتيجية العلامة التجارية',
+    descEn: 'We craft identities that resonate with your audience and stand the test of time.',
+    descAr: 'نصمم هويات تجارية تترسخ في أذهان جمهورك وتصمد أمام اختبار الزمن.',
+  },
+  {
+    id: 2,
+    icon: 'megaphone',
+    titleEn: 'Digital Marketing',
+    titleAr: 'التسويق الرقمي',
+    descEn: 'Data-driven campaigns that maximize ROI and elevate your digital presence.',
+    descAr: 'حملات مبنية على البيانات لتعظيم العائد على الاستثمار ورفع مستوى حضورك الرقمي.',
+  },
+  {
+    id: 3,
+    icon: 'pen-tool',
+    titleEn: 'Creative Design',
+    titleAr: 'التصميم الإبداعي',
+    descEn: 'Visual storytelling that captures attention and communicates your essence.',
+    descAr: 'سرد بصري يجذب الانتباه ويعبر عن جوهر علامتك التجارية بوضوح.',
+  },
+  {
+    id: 4,
+    icon: 'camera',
+    titleEn: 'Media Production',
+    titleAr: 'الإنتاج الإعلامي',
+    descEn: 'High-end photography and videography to showcase your products luxuriously.',
+    descAr: 'تصوير فوتوغرافي وفيديو عالي الجودة لعرض منتجاتك بأسلوب فاخر.',
+  },
+];
+
+export const PROJECTS: Project[] = [
+  {
+    id: 1,
+    titleEn: 'Zain Signage',
+    titleAr: 'لوحة محل زين',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p1.jpeg',
+  },
+  {
+    id: 2,
+    titleEn: 'Alhamdi Lighting',
+    titleAr: 'لوحة الحامدي للإضاءة',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p2.jpeg',
+  },
+  {
+    id: 3,
+    titleEn: 'Naseem Sandwiches',
+    titleAr: 'لوحة مطعم نسيم',
+    categoryEn: 'Branding',
+    categoryAr: 'هوية بصرية',
+    image: '/portfolio/p3.jpeg',
+  },
+  {
+    id: 4,
+    titleEn: 'Rawnaq Boutique',
+    titleAr: 'لوحة بوتيك رونق',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p4.jpeg',
+  },
+  {
+    id: 5,
+    titleEn: 'Vape Paris',
+    titleAr: 'لوحة فيب باريس',
+    categoryEn: '3D Signage',
+    categoryAr: 'لوحات ثلاثية الأبعاد',
+    image: '/portfolio/p5.jpeg',
+  },
+  {
+    id: 6,
+    titleEn: 'Outdoor Advertising',
+    titleAr: 'لوحات خارجية',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p6.jpeg',
+  },
+  {
+    id: 7,
+    titleEn: 'Commercial Branding',
+    titleAr: 'هوية تجارية',
+    categoryEn: 'Branding',
+    categoryAr: 'هوية بصرية',
+    image: '/portfolio/p7.jpeg',
+  },
+  {
+    id: 8,
+    titleEn: 'Luxury Signage',
+    titleAr: 'لوحات فاخرة',
+    categoryEn: '3D Signage',
+    categoryAr: 'لوحات ثلاثية الأبعاد',
+    image: '/portfolio/p8.jpeg',
+  },
+  {
+    id: 9,
+    titleEn: 'Retail Sign Boards',
+    titleAr: 'لوحات محلات',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p9.jpeg',
+  },
+  {
+    id: 10,
+    titleEn: 'Corporate Identity',
+    titleAr: 'هوية شركات',
+    categoryEn: 'Branding',
+    categoryAr: 'هوية بصرية',
+    image: '/portfolio/p10.jpeg',
+  },
+  {
+    id: 11,
+    titleEn: 'Modern Signage',
+    titleAr: 'لوحات حديثة',
+    categoryEn: '3D Signage',
+    categoryAr: 'لوحات ثلاثية الأبعاد',
+    image: '/portfolio/p11.jpeg',
+  },
+  {
+    id: 12,
+    titleEn: 'Street Advertising',
+    titleAr: 'إعلانات الشوارع',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p12.jpeg',
+  },
+  {
+    id: 13,
+    titleEn: 'Creative Branding',
+    titleAr: 'هوية إبداعية',
+    categoryEn: 'Branding',
+    categoryAr: 'هوية بصرية',
+    image: '/portfolio/p13.jpeg',
+  },
+  {
+    id: 14,
+    titleEn: 'Premium Sign Boards',
+    titleAr: 'لوحات إعلانية مميزة',
+    categoryEn: 'Sign Boards',
+    categoryAr: 'لوحات إعلانية',
+    image: '/portfolio/p14.jpeg',
+  },
+  {
+    id: 15,
+    titleEn: 'Illuminated Signs',
+    titleAr: 'لوحات مضيئة',
+    categoryEn: '3D Signage',
+    categoryAr: 'لوحات ثلاثية الأبعاد',
+    image: '/portfolio/p15.jpeg',
+  },
+];
+
+export const STATS: Stat[] = [
+  { id: 1, value: '+500', labelEn: 'Clients Served', labelAr: 'عميل سعيد' },
+  { id: 2, value: '98%', labelEn: 'Success Rate', labelAr: 'نسبة نجاح' },
+  { id: 3, value: '+50', labelEn: 'Awards Won', labelAr: 'جائزة عالمية' },
+  { id: 4, value: '10+', labelEn: 'Years Experience', labelAr: 'سنوات خبرة' },
+];
